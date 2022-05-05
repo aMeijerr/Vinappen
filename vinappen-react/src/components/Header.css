@@ -1,0 +1,14 @@
+.header {
+    min-height: 220px;
+    min-width: 100vw;
+    background-image: url("../img/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.header h1 {
+    color: white;
+    padding: 1rem;
+    margin: 0;
+}

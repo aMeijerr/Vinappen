@@ -1,0 +1,64 @@
+{
+    "title": "Mouton Rothschild",
+    "description": "Mythical red bordeaux",
+    "imageUrl": "images/placeholder-wine-bottle.png",
+    "storeInYears": 20,
+    "ratings": [5, 4, 5, 4],
+    "category": ["France", "Bordeaux"],
+    "grapes": [
+        { 
+        "grapes": "Merlot",
+        "typeOfGrape": "Blue",
+        "percentAmount": 45
+    },
+    { 
+        "grapes": "Cabernet sauvignon",
+        "typeOfGrape": "Blue",
+        "percentAmount": 25
+    },
+    { 
+        "grapes": "Rousanne",
+        "typeOfGrape": "Green",
+        "percentAmount": 30
+    }
+],
+    "process": [
+        "Picking grapes",
+        "Maceration",
+        "Aged on oak cask for 4 years",
+        "Bottle aging in cellar for 5 years",
+        "Ready for sales"
+    ]
+},
+{
+    "title": "Domaine Certan",
+    "description": "East bank Bordeaux",
+    "imageUrl": "images/placeholder-wine-bottle.png",
+    "storeInYears": 20,
+    "ratings": [5, 4, 5, 4],
+    "category": ["France", "Bordeaux"],
+    "grapes": [
+        { 
+        "grapes": "Merlot",
+        "typeOfGrape": "Blue",
+        "percentAmount": 45
+    },
+    { 
+        "grapes": "Cabernet sauvignon",
+        "typeOfGrape": "Blue",
+        "percentAmount": 25
+    },
+    { 
+        "grapes": "Rousanne",
+        "typeOfGrape": "Green",
+        "percentAmount": 30
+    }
+],
+    "process": [
+        "Picking grapes",
+        "Maceration",
+        "Aged on oak cask for 4 years",
+        "Bottle aging in cellar for 5 years",
+        "Ready for sales"
+    ]
+}
