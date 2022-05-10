@@ -5,7 +5,8 @@ const WineListItem = ({wine}: any) => {
     return (
         <div className="list-item">
             <Link to={`/wines/${wine._id}`}>
-                <li>{wine.vintage}, {wine.description}, {wine.title}</li>
+                <li>{wine.vintage} {wine.title}, {wine.wineMaker}, {wine.category[0]}</li>
+                <div className="wine-price">{wine.price}:-</div>
             </Link>
         </div>
     )

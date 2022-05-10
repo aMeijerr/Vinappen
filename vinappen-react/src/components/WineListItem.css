@@ -1,5 +1,18 @@
 .list-item li, a {
+    display: flex;
     text-decoration: none;
     color: black;
     cursor: pointer;
+    padding: 1px;
+}
+
+.list-item li:hover {
+    color: grey;
+}
+
+.wine-price {
+    margin: auto 1rem auto auto;
+    font-family: 'Just Another Hand', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
 }

@@ -1,0 +1,6 @@
+.selected-wine {
+    padding: 3rem;
+  width: 600px;
+  height: 750px;
+  flex-direction: column;
+}

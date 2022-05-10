@@ -1,0 +1,283 @@
+{WHITE WINES},
+{
+    "title": "Silvaner Escherndorfer Fürstenberg",
+    "wineMaker": "Weingut Schäffer",
+    "description": "Fruktig, nyanserad, mycket frisk smak med inslag av päron, mineral, gröna äpplen, honungsmelon, färska örter och lime. Serveras vid 8-10°C som aperitif eller till rätter av fisk eller skaldjur.",
+    "imageUrl": "./img/bottle.png",
+    "ratings": [5, 4, 5, 4],
+    "category": ["Tyskland", "Franken", "Vitt"],
+    "vintage": 2020,
+    "alcohol": 13,
+    "price": 199,
+    "artNr": 961614,
+    "grapes": [
+        { 
+        "grapes": "Sylvaner",
+        "typeOfGrape": "Green",
+        "percentAmount": 100
+    }
+],
+    "process": [
+        "Druvorna plockades för hand",
+        "36 timmars inledande skalmaceration följt av spontanjäsning",
+        "Vinet vilade därefter ett år på ståltank innan buteljering."
+    ]
+},
+{
+    "title": "Sauvignon Blanc",
+    "wineMaker": "Paracombe",
+    "description": "Aromatisk, fruktig, mycket frisk smak med inslag av krusbär, gröna äpplen, svartvinbärsblad, honungsmelon och lime. Serveras vid 8-10°C till rätter av fisk eller skaldjur.",
+    "imageUrl": "./img/paracombe.png",
+    "ratings": [5, 4, 5, 4],
+    "category": ["Australien", "Adelaide", "Vitt"],
+    "vintage": 2021,
+    "alcohol": 12.5,
+    "price": 149,
+    "artNr": 90366,
+    "grapes": [
+        { 
+        "grapes": "Sauvignon Blanc",
+        "typeOfGrape": "Green",
+        "percentAmount": 100
+    }
+],
+    "process": [
+        "Druvorna skördades i första halvan av mars.",
+        "Musten jäste på rostfria ståltankar.",
+        "Vinet fick ligga kvar på tankarna i totalt fyra månader tillsammans med sin jästfällning"
+    ]
+},
+{
+    "title": "Suertes del Marqués",
+    "wineMaker": "Trenzado",
+    "description": "Aromatisk, fruktig, mycket frisk smak med inslag av fat, rökig mineral, timjan, gula plommon, vita vinbär, ostronskal, rosmarin och citron. Serveras vid 8-10°C till smakrika rätter av fisk eller till fågel.",
+    "imageUrl": "./img/trenzado.png",
+    "ratings": [5, 4, 5, 4],
+    "category": ["Spanien", "Kanarieöarna", "Vitt"],
+    "vintage": 2020,
+    "alcohol": 12,
+    "price": 229,
+    "artNr": 93379,
+    "grapes": [
+        { 
+        "grapes": "Listán blanco",
+        "typeOfGrape": "Green",
+        "percentAmount": 75
+    },
+    { 
+        "grapes": "Pedro ximenez",
+        "typeOfGrape": "Green",
+        "percentAmount": 5
+    },
+    { 
+        "grapes": "Albillo criollo",
+        "typeOfGrape": "Green",
+        "percentAmount": 5
+    },
+    { 
+        "grapes": "Gual",
+        "typeOfGrape": "Green",
+        "percentAmount": 5
+    },
+    { 
+        "grapes": "Marmajuelo",
+        "typeOfGrape": "Green",
+        "percentAmount": 5
+    },
+    { 
+        "grapes": "Malvasia",
+        "typeOfGrape": "Green",
+        "percentAmount": 5
+    }
+],
+    "process": [
+        "Druvorna skördades för hand.",
+        "Druvorna pressades som hela klasar.",
+        "Cirka hälften av musten jäste på franska ekfat om 500 liter och hälften jäste på betongtank.",
+        "Vinet har lagrats ett halvår innan buteljering.",
+        "Det vin som jäste på fat lagrades på dessa fat och vinet som jäst på betongtank lagrades i tank."
+    ]
+},
+{
+    "title": "Bastingage",
+    "wineMaker": "Terre de L'Elu",
+    "description": "Smakrikt, mycket frisk vin med inslag av fat, vinteräpplen, bivax, kryddor, torkade örter, gula plommon, macadamianötter och grillad citron. Serveras vid 10-12°C till smakrika rätter av fisk eller ljust kött, eller till lättare rätter av lammkött.",
+    "imageUrl": "./img/bastingage.png",
+    "ratings": [5, 4, 5, 4],
+    "category": ["Frankrike", "Vitt"],
+    "vintage": 2020,
+    "alcohol": 14.5,
+    "price": 199,
+    "artNr": 91814,
+    "grapes": [
+        { 
+        "grapes": "Chenin Blanc",
+        "typeOfGrape": "Green",
+        "percentAmount": 100
+    }
+],
+    "process": [
+        "Druvorna plockades för hand.",
+        "Musten spontanjäste.",
+        "Vinet har lagrats cirka ett år tillsammans med sin jästfällning på större ektunnor."
+    ]
+},
+{
+    "title": "Käferberg Grüner Veltliner",
+    "wineMaker": "Rabl",
+    "description": "Fruktig smak med inslag av gula päron, honung, galiamelon, vitpeppar, aprikos och mandel. Serveras vid 8-10°C till vegetariskt eller till rätter av ljust kött.",
+    "imageUrl": "./img/rabl.png",
+    "ratings": [5, 4, 5, 4],
+    "category": ["Österrike", "Kamptal", "Vitt"],
+    "vintage": 2020,
+    "alcohol": 13,
+    "price": 199,
+    "artNr": 93593,
+    "grapes": [
+        { 
+        "grapes": "Grüner Veltliner",
+        "typeOfGrape": "Green",
+        "percentAmount": 100
+    }
+],
+    "process": [
+        "Druvorna skördades för hand med start 19 september.",
+        "Druvorna pressas lätt och musten får sedan spontanjäsa på ståltank.",
+        "25% av vinet har lagrats cirka åtta månader på gamla ekfat om 500 liter, resterande vin lagras på rostfria ståltankar."
+    ]
+},
+{
+    "title": "Kalkmergel",
+    "wineMaker": "Weingut Friedrich Becker",
+    "description": "Fruktig, mycket frisk, något kryddig smak med inslag av röda äpplen, gula plommon, hallon, färska örter, nektarin och grapefrukt. Serveras vid 8-10°C till vegetariskt, till smakrika rätter av fisk, eller till rätter av ljust kött.",
+    "imageUrl": "./img/kalkmergel.png",
+    "ratings": [5, 4, 5, 4],
+    "category": ["Tyskland", "Pfalz", "Vitt"],
+    "vintage": 2020,
+    "alcohol": 13,
+    "price": 199,
+    "artNr": 90152,
+    "grapes": [
+        { 
+        "grapes": "Grauer burgunder (pinot gris)",
+        "typeOfGrape": "Green",
+        "percentAmount": 100
+    }
+],
+    "process": [
+        "Druvorna skördades för hand.",
+        "En veckas inledande skalmaceration.",
+        "Jäsning på gamla ekfat."
+    ]
+}
+
+{RED WINE},
+{
+    "title": "Palermo",
+    "wineMaker": "Orin Swift Cellars",
+    "description": "Komplex, något utvecklad, fruktig smak med tydlig fatkaraktär, inslag av svarta vinbär, katrinplommon, ceder, kaffe, mörk choklad, svart te, kokos och mynta. Serveras vid cirka 18°C till rätter av mörkt kött.",
+    "imageUrl": "./img/palermo.png",
+    "ratings": [5, 4, 5, 4],
+    "category": ["USA", "Napa Valley", "Rött"],
+    "vintage": 2018,
+    "alcohol": 15.5,
+    "price": 599,
+    "artNr": 92689,
+    "grapes": [
+        { 
+        "grapes": "Cabernet Sauvignon",
+        "typeOfGrape": "Blue",
+        "percentAmount": 75
+    },
+    { 
+        "grapes": "Merlot",
+        "typeOfGrape": "Blue",
+        "percentAmount": 15
+    },
+    { 
+        "grapes": "Malbec",
+        "typeOfGrape": "Blue",
+        "percentAmount": 10
+    }
+],
+    "process": [
+        "Druvorna skördades för hand.",
+        "Små kompakta druvor, lågt skördeuttag från olika små microområden i Napa.",
+        "Vinet har lagrats på franska ekfat i 10 månader varav 35% nya fat."
+    ]
+},
+{
+    "title": "Estrecho",
+    "wineMaker": "Bodegas E. Mendoza",
+    "description": "Smakrikt vin med rostad fatkaraktär, inslag av mörka körsbär, kakao, kanel, plommon, kaffe, björnbär och vanilj. Serveras vid cirka 18°C till rätter av mörkt kött.",
+    "imageUrl": "./img/estrecho.png",
+    "ratings": [5, 4, 5, 4],
+    "category": ["Spanien", "Alicante", "Rött"],
+    "vintage": 2018,
+    "alcohol": 14.5,
+    "price": 239,
+    "artNr": 94343,
+    "grapes": [
+        { 
+        "grapes": "Monastrell",
+        "typeOfGrape": "Blue",
+        "percentAmount": 100
+    }
+],
+    "process": [
+        "Druvorna skördades maskinellt.",
+        "Vinet har lagrats ett år och tre månader på franska ekfat.",
+        "Sedan ytterligare minst ett år på flaska"
+    ]
+},
+{
+    "title": "Marlborough Pinot Noir",
+    "wineMaker": "Deep Down Wines",
+    "description": "Nyanserad, fruktig, kryddig smak med inslag av skogshallon, lagerblad, körsbär, viol, örter, lakrits och blåbär. Serveras vid cirka 16°C till vegetariskt eller till rätter av ljust kött.",
+    "imageUrl": "./img/deepdown.png",
+    "ratings": [5, 4, 5, 4],
+    "category": ["Nya Zeeland", "Marlborough", "Rött"],
+    "vintage": 2021,
+    "alcohol": 12.5,
+    "price": 249,
+    "artNr": 93174,
+    "grapes": [
+        { 
+        "grapes": "Pinot Noir",
+        "typeOfGrape": "Blue",
+        "percentAmount": 100
+    }
+],
+    "process": [
+        "Druvorna skördades maskinellt.",
+        "Cirka tre veckors jäsning och skalmaceration. Ingen tillsatt jäst användes.",
+        "Vinet har lagrats ett par månader på gamla ekfat om 500 liter."
+    ]
+},
+{
+    "title": "Kékfrankos",
+    "wineMaker": "Wetzer",
+    "description": "Kryddig, fruktig smak med inslag av fat, mörka körsbär, kryddnejlika, svarta vinbär, viol, choklad och skogshallon. Serveras vid 16-18°C till rätter av lamm- eller nötkött.",
+    "imageUrl": "./img/kekfrankos.png",
+    "ratings": [5, 4, 5, 4],
+    "category": ["Ungern", "Sopron", "Rött"],
+    "vintage": 2020,
+    "alcohol": 13,
+    "price": 219,
+    "artNr": 93167,
+    "grapes": [
+        { 
+        "grapes": "Kékfrankos",
+        "typeOfGrape": "Blue",
+        "percentAmount": 100
+    }
+],
+    "process": [
+        "Druvorna skördades för hand.",
+        "Tre veckors spontanjäsning i öppna ungerska ekfat följt av pressning i korgpress.",
+        "Vinet har lagrats ett år på ekfat om 300, 500 och 1 000 liter.",
+        "Buteljeringen skedde utan klarning eller filtrering."
+    ]
+}
+
+
