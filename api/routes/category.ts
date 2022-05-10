@@ -20,7 +20,7 @@ router.get('/:category', async (req: Request, res: Response) => {
 // });
 
 
-//Sökfunktion kategori mot ex. /category/France/dom
+// Sökfunktion kategori mot ex. /category/France/dom
 router.get('/:categoryName/:query', async (req, res) => {
     const foundWine = await WineModel.find({ category: req.params.categoryName,
     title: { $regex: req.params.query, $options: 'i' } 

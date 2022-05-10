@@ -1,20 +1,11 @@
 .navbar {
-    width: 100vw;
-    height: 20px;
-    padding: 5px;
-    background-color: #040403;
-    display: flex;
-    justify-content: space-evenly;
+    position: absolute;
+    top: 4rem;
+    left: 7rem;
 }
 
 .navbar-links a {
     margin: auto 2rem auto 2rem;
     text-decoration: none;
-    color: white;
     font-weight: bold;
-}
-
-.navbar-input input {
-    border-radius: 0.5rem;
-    width: 15rem;
 }

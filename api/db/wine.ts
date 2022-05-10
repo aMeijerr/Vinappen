@@ -6,14 +6,14 @@ export const getWines = async () => {
 }
 
 
-// export const getWinesBySearch = async (search: string) => {
-//     const wines = await WineModel.find({
-//         $or: [
-//             { title: { $regex: search, $options: 'i' } }
-//         ]
-//     })
-//     return wines;
-// }
+export const getWinesBySearch = async (search: string) => {
+    const wines = await WineModel.find({
+        $or: [
+            { title: { $regex: search, $options: 'i' } }
+        ]
+    })
+    return wines;
+}
 
 
 export const getWinesById = async (id: string) => {

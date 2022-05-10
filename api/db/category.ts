@@ -10,11 +10,11 @@ export const GetWinesByCategory = async (category: string) => {
     return wines;
 }
 
-// export const GetWinesByCategoryAndSearch = async (category: string, search: string) => {
-//     const wines = await WineModel.find({category: category,
-//         $or: [
-//             { title: { $regex: search, $options: 'i' } }
-//         ]
-// });
-//     return wines;
-// }
+export const GetWinesByCategoryAndSearch = async (category: string, search: string) => {
+    const wines = await WineModel.find({category: category,
+        $or: [
+            { title: { $regex: search, $options: 'i' } }
+        ]
+});
+    return wines;
+}

@@ -2,7 +2,7 @@
     "title": "Mouton Rothschild",
     "description": "Mythical red bordeaux",
     "imageUrl": "images/placeholder-wine-bottle.png",
-    "storeInYears": 20,
+    "vintage": 20,
     "ratings": [5, 4, 5, 4],
     "category": ["France", "Bordeaux"],
     "grapes": [
@@ -34,7 +34,7 @@
     "title": "Domaine Certan",
     "description": "East bank Bordeaux",
     "imageUrl": "images/placeholder-wine-bottle.png",
-    "storeInYears": 20,
+    "vintage": 20,
     "ratings": [5, 4, 5, 4],
     "category": ["France", "Bordeaux"],
     "grapes": [

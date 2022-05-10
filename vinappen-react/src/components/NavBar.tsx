@@ -4,15 +4,13 @@ import "./NavBar.css"
 //ADD <Link> with react routing
 const NavBar = () => (
     <div className="navbar">
-        <div className="navbar-links">
-        <a href="/">France</a>
-        <a href="/">Italy</a>
-        <a href="/">Spain</a>
-        <a href="/">Greece</a>
-        </div>
-        <div className="navbar-input">
-            <input type="text" placeholder="What would you like?"></input>
-        </div>
+        <h3>Categories</h3>
+        <ul className="navbar-links">
+        <li><a href="/">France</a></li>
+        <li><a href="/">Italy</a></li>
+        <li><a href="/">Spain</a></li>
+        <li><a href="/">Greece</a></li>
+        </ul>
     </div>
 )
 

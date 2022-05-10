@@ -1,17 +1,25 @@
-import './App.css';
-import Wines from './components/Wines';
-import Header from './components/Header';
-import Footer from './components/Footer';
+// import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import FeaturedWines from './components/FeaturedWines';
+// import SelectedWine from './components/SelectedWine';
+
 import NavBar from './components/NavBar';
 
+import './App.css';
+
+// interface MatchParams {
+//   id: string;
+// }
+
+// interface MatchProps extends RouteComponentProps<MatchParams> {
+
+// }
 
 const App = () => 
   <div className="App">
     <div className="container">
-    <Header />
-    <NavBar/>
-    <Wines />
-    <Footer/>
+      <NavBar/>
+      <FeaturedWines/>
     </div>
   </div>
 
