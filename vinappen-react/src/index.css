@@ -7,10 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body p {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.2rem;
+}
+
 body li {
-  font-family: 'Just Another Hand', sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
+  font-family: 'Inconsolata', monospace, 'Just Another Hand', sans-serif;
+  font-size: 0.9rem;
+  /* letter-spacing: 1px; */
 }
 
 body h1, h2, h3, h4 {

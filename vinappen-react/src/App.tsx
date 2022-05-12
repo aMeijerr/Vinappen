@@ -17,8 +17,10 @@ import './App.css';
 
 const App = () => 
   <div className="App">
-    <div className="container">
+    <div className="navbar">
       <NavBar/>
+    </div>
+    <div className="container">
       <FeaturedWines/>
     </div>
   </div>

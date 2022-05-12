@@ -1,6 +1,36 @@
 .selected-wine {
+    display: flex;
     padding: 3rem;
   width: 600px;
   height: 750px;
   flex-direction: column;
+}
+
+/* .wine-title-header {
+    margin: auto;
+} */
+
+.wine-info {
+    display: flex;
+    flex-direction: row;
+    align-items: i;
+}
+
+.wine-info div {
+    max-width: 350px;
+}
+
+.bottle-description {
+    display: flex;
+    margin: 1rem;
+}
+
+.bottle-description h2 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.bottle-description p {
+    width: 300px;
+    margin: 2rem auto auto auto;
 }

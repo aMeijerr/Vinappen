@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getTsBuildInfoEmitOutputFilePath } from 'typescript';
 import './SelectedWine.css';
-
-let imgUrl = ""
 
 const SelectedWine = () => {
     const [wines, setWines] = useState<any>({});
@@ -13,56 +10,54 @@ const SelectedWine = () => {
             const wines = await fetch(`http://localhost:3000/wines/${id}`)
             .then(res => res.json())
             setWines(wines);
-            imgUrl = wines.imageUrl
-        console.log(wines)
     }
     fetchWines();
     }, [id]); 
 
-// const categoryTitle = () => {
-//     let flag;
-//     console.log(country)
-//         switch (country){
-//             case (country == "Tyskland"):
-//                 flag = "🇩🇪 Tyskland"
-//                 break;
-//             case (country == "Franrike"):
-//                 flag = "🇫🇷 Franrike"
-//                 break;
-//             default:
-//                 flag = "🍷"
-//         }
-//         return flag
-//     }
-// };
-console.log(imgUrl)
+const CountryFlag: any = {
+    Australien: "🇦🇺",
+    Frankrike: "🇫🇷",
+    "Nya Zeeland": "🇳🇿",
+    Spanien: "🇪🇸",
+    Tyskland: "🇩🇪",
+    Ungern: "🇭🇺",
+    USA: "🇺🇸",
+    Österrike: "🇦🇹"
+}
 
     return (
-        <div className="selected-wine" >
+        <div className="selected-wine">
           <Link to="/">Back to start</Link>
-            <h1>{wines.title}</h1>
-                <div>
-                    {/* <p>{categoryTitle()}</p> */}
-                    <p>{wines.category}</p>
-                    <p>
-                        {wines.description}
-                    </p>
-                <img src={require('../img/bottle.png')} alt={wines.title} />
+                <div className="wine-title-header">
+                    <h1>{wines.wineMaker}</h1>
+                    <h3>{wines.title}, {wines.vintage}</h3>
+                    <p>{wines.category && CountryFlag[wines.category[0]]} {wines.category && wines.category[0]} - {wines.alcohol}% - #{wines.artNr}</p>
                 </div>
+                    <div className="bottle-description">
+                        <img src={wines.imageUrl} alt={wines.title} />
+                        {/* <img src="http://localhost:3000/images/deepdown.png" alt={wines.imgUrl}/> */}
+                        {/* <img src={require('http://localhost:3000/images/deepdown.png')} alt={wines.title} /> */}
+                        <p>{wines.description}</p>
+                        <h2>{wines.price}:-</h2>
+                    </div>
 
-            <div>
-                <h2>Druvkomposition</h2>
-                <ul>
-                    {wines.grapes && wines.grapes.map((grapes:any) => (
-                        <li key={grapes.grapes}>{grapes.grape} {grapes.typeOfGrape} {grapes.percentAmount}%</li>
-                    ))}
-                </ul>
-                <h2>Vinmakning / Skörd</h2>
+            <div className="wine-info">
+                <div>
+            <h4>Vinmakning / Skörd</h4>
                 <ol>
                     {wines.process && wines.process.map((step:any) => (
                         <li key={step.process}>{step}</li>
                     ))}
                 </ol>
+                </div>
+                <div>
+                <h4>Druvkomposition</h4>
+                <ul>
+                    {wines.grapes && wines.grapes.map((grapes:any) => (
+                        <li key={grapes.grape}>{grapes.percentAmount}% {grapes.grape}</li>
+                    ))}
+                </ul>
+                </div>
             </div>
         </div>
     )

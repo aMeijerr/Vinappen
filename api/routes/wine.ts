@@ -1,5 +1,5 @@
 import express, {Request, Response} from 'express';
-import { getWines, getWinesById } from '../db/wine';
+import { getWines, getWinesById, getWinesBySearch } from '../db/wine';
 import WineModel from '../db/models/wineModel';
 
 const router = express.Router();
@@ -14,13 +14,18 @@ router.get('/:wineId', async (req: Request, res: Response) => {
     res.status(200).json(gottenWine);
 });
 
-//Search title as ex. /wines/cert 
-router.get('/:query', async (req, res) => {
-    const foundWine = await WineModel.find({
-        title: { $regex: req.params.query, $options: 'i' } 
-    })
-    res.status(200).json(foundWine)
+router.get('/search/:query', async (req: Request, res: Response) => {
+    const gottenWines = await getWinesBySearch(req.params.query);
+    res.status(200).json(gottenWines);
 });
+
+// //Search title as ex. /wines/cert 
+// router.get('/:query', async (req, res) => {
+//     const foundWine = await WineModel.find({
+//         title: { $regex: req.params.query, $options: 'i' } 
+//     })
+//     res.status(200).json(foundWine)
+// });
 
 
 export default router

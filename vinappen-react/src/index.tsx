@@ -1,9 +1,9 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import CategoryView from './components/CategoryView';
 import SelectedWine from './components/SelectedWine'
 
 // import store from './app/store'
@@ -19,7 +19,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/wines/:id" element={<SelectedWine/>} />
-      {/* <Route path="/category/:id" element={<CategoryView/>} /> */}
+      <Route path="/category/:id" element={<CategoryView/>} />
     </Routes>
     </Router>
 );

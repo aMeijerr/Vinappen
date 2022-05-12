@@ -1,0 +1,9 @@
+.category-view {
+        padding: 3rem;
+        width: 600px;
+        height: 750px;
+        border: 1px solid black;
+        border-radius: 1rem;
+        background-color: white;
+        flex-direction: column;
+}
