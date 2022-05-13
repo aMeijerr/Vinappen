@@ -6,18 +6,33 @@
   flex-direction: column;
 }
 
+.return-link {
+    color: rgb(166, 30, 30);
+    text-decoration: underline;
+}
+
 /* .wine-title-header {
     margin: auto;
 } */
 
-.wine-info {
+.wine-info-price {
     display: flex;
     flex-direction: row;
-    align-items: i;
+    justify-content: space-between;
 }
 
-.wine-info div {
-    max-width: 350px;
+.wine-info-price h2 {
+    margin: auto 5rem auto auto;
+    font-size: 2rem;
+}
+
+.winemaking-description {
+    display: flex;
+    flex-direction: row;
+}
+
+.winemaking-description div {
+    max-width: 300px;
 }
 
 .bottle-description {

@@ -6,10 +6,6 @@ import WineModel from './models/wineModel';
 // }
 
 export const getCategories = async () => {
-    // const categories = await RecipeModel.find().distinct('category');
-    // const categories = await RecipeModel.find({}, {category: 1, _id: 0})
-    // const categoriesArray = categories.map(category => category.category);
-    // return categoriesArray.flat();
     const categories = await WineModel.aggregate([
         { $match: {} },
         { $unwind: '$category' },

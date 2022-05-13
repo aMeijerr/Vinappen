@@ -3,6 +3,7 @@ import {useState, useEffect} from "react";
 import { fetchWinesByCategory } from "../api";
 import WineListItem from "./WineListItem";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './CategoryView.css'
 
 
@@ -16,6 +17,7 @@ const CategoryView = () => {
     }, [id])
     return (
         <div className="category-view">
+            <Link to="/" className="return-link"><h5>Back to winelist</h5></Link>
             <h1>{id}</h1>
             {wines.map((wine: any) => 
             <WineListItem key={wine._id} wine={wine}></WineListItem> )}

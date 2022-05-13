@@ -1,0 +1,6 @@
+Fixa styling på kategorilistan, lista bara länder??
+
+Skapa rating på selectedWine
+skapa post mot rating
+
+Ta bort datapunkt i category -- område

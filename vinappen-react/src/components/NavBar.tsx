@@ -19,6 +19,7 @@
 import { useState, useEffect } from "react";
 import { fetchCategories } from "../api";
 import {Link} from "react-router-dom";
+import './NavBar.css';
 
 const NavBar = () => {
     // const [showCategories, setShowCategories] = useState(false);
@@ -27,11 +28,12 @@ const NavBar = () => {
         fetchCategories().then(categories => setCategories(categories.data));
         
     }, [])
+    console.log(categories)
   
     return (
         <div className="navbar">
             {/* <h3 className="nav-item" onClick={() => setShowCategories(!showCategories)}>Kategorier 🍷</h3> */}
-            {categories && categories.map((category, i):any => <Link to={`/category/${category._id}`} key={category._id}><p key={category._id}>{category._id} ({category.count})</p> </Link>)}
+            {categories && categories.map((category, i):any => <Link to={`/category/${category._id}`} key={category._id}><p key={category._id}>{category._id} ({category.count})</p> </Link>).splice(2, 10)}
         </div>
             )
 }

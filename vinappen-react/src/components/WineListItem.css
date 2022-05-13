@@ -12,7 +12,8 @@
 
 .wine-price {
     margin: auto 1rem auto auto;
-    font-family: 'Just Another Hand', sans-serif;
-    font-size: 1.5rem;
+    color: rgb(138, 0, 0);
+    font-family: 'Just Another Hand', 'Koulen', 'Inconsolata', sans-serif;
+    font-size: 1.3rem;
     letter-spacing: 1px;
 }

@@ -1,19 +1,18 @@
-{WHITE WINES},
+[
 {
     "title": "Silvaner Escherndorfer Fürstenberg",
     "wineMaker": "Weingut Schäffer",
     "description": "Fruktig, nyanserad, mycket frisk smak med inslag av päron, mineral, gröna äpplen, honungsmelon, färska örter och lime. Serveras vid 8-10°C som aperitif eller till rätter av fisk eller skaldjur.",
-    "imageUrl": "./img/bottle.png",
+    "imageUrl": "http://localhost:3000/images/bottle.png",
     "ratings": [5, 4, 5, 4],
-    "category": ["Tyskland", "Franken", "Vitt"],
+    "category": ["Tyskland", "Vitt"],
     "vintage": 2020,
     "alcohol": 13,
     "price": 199,
     "artNr": 961614,
     "grapes": [
         { 
-        "grapes": "Sylvaner",
-        "typeOfGrape": "Green",
+        "grape": "Sylvaner",
         "percentAmount": 100
     }
 ],
@@ -27,17 +26,16 @@
     "title": "Sauvignon Blanc",
     "wineMaker": "Paracombe",
     "description": "Aromatisk, fruktig, mycket frisk smak med inslag av krusbär, gröna äpplen, svartvinbärsblad, honungsmelon och lime. Serveras vid 8-10°C till rätter av fisk eller skaldjur.",
-    "imageUrl": "./img/paracombe.png",
+    "imageUrl": "http://localhost:3000/images/paracombe.png",
     "ratings": [5, 4, 5, 4],
-    "category": ["Australien", "Adelaide", "Vitt"],
+    "category": ["Australien", "Vitt"],
     "vintage": 2021,
     "alcohol": 12.5,
     "price": 149,
     "artNr": 90366,
     "grapes": [
         { 
-        "grapes": "Sauvignon Blanc",
-        "typeOfGrape": "Green",
+        "grape": "Sauvignon Blanc",
         "percentAmount": 100
     }
 ],
@@ -51,42 +49,36 @@
     "title": "Suertes del Marqués",
     "wineMaker": "Trenzado",
     "description": "Aromatisk, fruktig, mycket frisk smak med inslag av fat, rökig mineral, timjan, gula plommon, vita vinbär, ostronskal, rosmarin och citron. Serveras vid 8-10°C till smakrika rätter av fisk eller till fågel.",
-    "imageUrl": "./img/trenzado.png",
+    "imageUrl": "http://localhost:3000/images/trenzado.png",
     "ratings": [5, 4, 5, 4],
-    "category": ["Spanien", "Kanarieöarna", "Vitt"],
+    "category": ["Spanien", "Vitt"],
     "vintage": 2020,
     "alcohol": 12,
     "price": 229,
     "artNr": 93379,
     "grapes": [
         { 
-        "grapes": "Listán blanco",
-        "typeOfGrape": "Green",
+        "grape": "Listán blanco",
         "percentAmount": 75
     },
     { 
         "grapes": "Pedro ximenez",
-        "typeOfGrape": "Green",
         "percentAmount": 5
     },
     { 
         "grapes": "Albillo criollo",
-        "typeOfGrape": "Green",
         "percentAmount": 5
     },
     { 
         "grapes": "Gual",
-        "typeOfGrape": "Green",
         "percentAmount": 5
     },
     { 
         "grapes": "Marmajuelo",
-        "typeOfGrape": "Green",
         "percentAmount": 5
     },
     { 
         "grapes": "Malvasia",
-        "typeOfGrape": "Green",
         "percentAmount": 5
     }
 ],
@@ -102,7 +94,7 @@
     "title": "Bastingage",
     "wineMaker": "Terre de L'Elu",
     "description": "Smakrikt, mycket frisk vin med inslag av fat, vinteräpplen, bivax, kryddor, torkade örter, gula plommon, macadamianötter och grillad citron. Serveras vid 10-12°C till smakrika rätter av fisk eller ljust kött, eller till lättare rätter av lammkött.",
-    "imageUrl": "./img/bastingage.png",
+    "imageUrl": "http://localhost:3000/images/bastingage.png",
     "ratings": [5, 4, 5, 4],
     "category": ["Frankrike", "Vitt"],
     "vintage": 2020,
@@ -111,7 +103,7 @@
     "artNr": 91814,
     "grapes": [
         { 
-        "grapes": "Chenin Blanc",
+        "grape": "Chenin Blanc",
         "typeOfGrape": "Green",
         "percentAmount": 100
     }
@@ -126,17 +118,16 @@
     "title": "Käferberg Grüner Veltliner",
     "wineMaker": "Rabl",
     "description": "Fruktig smak med inslag av gula päron, honung, galiamelon, vitpeppar, aprikos och mandel. Serveras vid 8-10°C till vegetariskt eller till rätter av ljust kött.",
-    "imageUrl": "./img/rabl.png",
+    "imageUrl": "http://localhost:3000/images/rabl.png",
     "ratings": [5, 4, 5, 4],
-    "category": ["Österrike", "Kamptal", "Vitt"],
+    "category": ["Österrike", "Vitt"],
     "vintage": 2020,
     "alcohol": 13,
     "price": 199,
     "artNr": 93593,
     "grapes": [
         { 
-        "grapes": "Grüner Veltliner",
-        "typeOfGrape": "Green",
+        "grape": "Grüner Veltliner",
         "percentAmount": 100
     }
 ],
@@ -150,17 +141,16 @@
     "title": "Kalkmergel",
     "wineMaker": "Weingut Friedrich Becker",
     "description": "Fruktig, mycket frisk, något kryddig smak med inslag av röda äpplen, gula plommon, hallon, färska örter, nektarin och grapefrukt. Serveras vid 8-10°C till vegetariskt, till smakrika rätter av fisk, eller till rätter av ljust kött.",
-    "imageUrl": "./img/kalkmergel.png",
+    "imageUrl": "http://localhost:3000/images/kalkmergel.png",
     "ratings": [5, 4, 5, 4],
-    "category": ["Tyskland", "Pfalz", "Vitt"],
+    "category": ["Tyskland", "Vitt"],
     "vintage": 2020,
     "alcohol": 13,
     "price": 199,
     "artNr": 90152,
     "grapes": [
         { 
-        "grapes": "Grauer burgunder (pinot gris)",
-        "typeOfGrape": "Green",
+        "grape": "Grauer burgunder (pinot gris)",
         "percentAmount": 100
     }
 ],
@@ -169,34 +159,29 @@
         "En veckas inledande skalmaceration.",
         "Jäsning på gamla ekfat."
     ]
-}
-
-{RED WINE},
+},
 {
     "title": "Palermo",
     "wineMaker": "Orin Swift Cellars",
     "description": "Komplex, något utvecklad, fruktig smak med tydlig fatkaraktär, inslag av svarta vinbär, katrinplommon, ceder, kaffe, mörk choklad, svart te, kokos och mynta. Serveras vid cirka 18°C till rätter av mörkt kött.",
-    "imageUrl": "./img/palermo.png",
+    "imageUrl": "http://localhost:3000/images/palermo.png",
     "ratings": [5, 4, 5, 4],
-    "category": ["USA", "Napa Valley", "Rött"],
+    "category": ["USA", "Rött"],
     "vintage": 2018,
     "alcohol": 15.5,
     "price": 599,
     "artNr": 92689,
     "grapes": [
         { 
-        "grapes": "Cabernet Sauvignon",
-        "typeOfGrape": "Blue",
+        "grape": "Cabernet Sauvignon",
         "percentAmount": 75
     },
     { 
-        "grapes": "Merlot",
-        "typeOfGrape": "Blue",
+        "grape": "Merlot",
         "percentAmount": 15
     },
     { 
-        "grapes": "Malbec",
-        "typeOfGrape": "Blue",
+        "grape": "Malbec",
         "percentAmount": 10
     }
 ],
@@ -210,17 +195,16 @@
     "title": "Estrecho",
     "wineMaker": "Bodegas E. Mendoza",
     "description": "Smakrikt vin med rostad fatkaraktär, inslag av mörka körsbär, kakao, kanel, plommon, kaffe, björnbär och vanilj. Serveras vid cirka 18°C till rätter av mörkt kött.",
-    "imageUrl": "./img/estrecho.png",
+    "imageUrl": "http://localhost:3000/images/estrecho.png",
     "ratings": [5, 4, 5, 4],
-    "category": ["Spanien", "Alicante", "Rött"],
+    "category": ["Spanien", "Rött"],
     "vintage": 2018,
     "alcohol": 14.5,
     "price": 239,
     "artNr": 94343,
     "grapes": [
         { 
-        "grapes": "Monastrell",
-        "typeOfGrape": "Blue",
+        "grape": "Monastrell",
         "percentAmount": 100
     }
 ],
@@ -234,17 +218,16 @@
     "title": "Marlborough Pinot Noir",
     "wineMaker": "Deep Down Wines",
     "description": "Nyanserad, fruktig, kryddig smak med inslag av skogshallon, lagerblad, körsbär, viol, örter, lakrits och blåbär. Serveras vid cirka 16°C till vegetariskt eller till rätter av ljust kött.",
-    "imageUrl": "./img/deepdown.png",
+    "imageUrl": "http://localhost:3000/images/deepdown.png",
     "ratings": [5, 4, 5, 4],
-    "category": ["Nya Zeeland", "Marlborough", "Rött"],
+    "category": ["Nya Zeeland", "Rött"],
     "vintage": 2021,
     "alcohol": 12.5,
     "price": 249,
     "artNr": 93174,
     "grapes": [
         { 
-        "grapes": "Pinot Noir",
-        "typeOfGrape": "Blue",
+        "grape": "Pinot Noir",
         "percentAmount": 100
     }
 ],
@@ -258,17 +241,16 @@
     "title": "Kékfrankos",
     "wineMaker": "Wetzer",
     "description": "Kryddig, fruktig smak med inslag av fat, mörka körsbär, kryddnejlika, svarta vinbär, viol, choklad och skogshallon. Serveras vid 16-18°C till rätter av lamm- eller nötkött.",
-    "imageUrl": "./img/kekfrankos.png",
+    "imageUrl": "http://localhost:3000/images/kekfrankos.png",
     "ratings": [5, 4, 5, 4],
-    "category": ["Ungern", "Sopron", "Rött"],
+    "category": ["Ungern", "Rött"],
     "vintage": 2020,
     "alcohol": 13,
     "price": 219,
     "artNr": 93167,
     "grapes": [
         { 
-        "grapes": "Kékfrankos",
-        "typeOfGrape": "Blue",
+        "grape": "Kékfrankos",
         "percentAmount": 100
     }
 ],
@@ -279,5 +261,6 @@
         "Buteljeringen skedde utan klarning eller filtrering."
     ]
 }
+]
 
 
