@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import WineRating from './WineRating';
 import './SelectedWine.css';
+import { arrayBuffer } from 'stream/consumers';
 
 const SelectedWine = () => {
     const [wines, setWines] = useState<any>({});
@@ -14,8 +16,6 @@ const SelectedWine = () => {
     fetchWines();
     }, [id]); 
 
-    console.log(wines)
-
 const CountryFlag: any = {
     Australien: "🇦🇺",
     Frankrike: "🇫🇷",
@@ -26,6 +26,15 @@ const CountryFlag: any = {
     USA: "🇺🇸",
     Österrike: "🇦🇹"
 }
+
+// function SumRatingsArray(array: any) {
+//     const sum = array.reduce((a: number, b: number) => a + b, 0); 
+//     const avg = (sum / array.length) || 0;
+//     return avg;
+//   }
+
+// const averageSum = wines.ratings.reduce((a: number, b: number) => a + b, 0) / wines.ratings.length;
+// const avg = (sum / wines.ratings.length) || 0;
 
     return (
         <div className="selected-wine">
@@ -45,6 +54,10 @@ const CountryFlag: any = {
                 <div className="wine-info-price">
                     <p>{wines.category && CountryFlag[wines.category[0]]} {wines.category && wines.category[0]} | {wines.alcohol}% | #{wines.artNr}</p>
                     <h2>{wines.price}:-</h2>
+                </div>
+                <div className="wine-rating">
+                <WineRating/>
+                <p>20%</p>
                 </div>
 
                 <div className="winemaking-description">

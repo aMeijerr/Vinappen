@@ -49,3 +49,10 @@
     width: 300px;
     margin: 2rem auto auto auto;
 }
+
+.wine-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 6rem;
+}

@@ -26,7 +26,7 @@ const schema = new Schema<WineType>({
     ratings: { type: [Number], required: true },
     category: { type: [String], required: true },
     grapes: { type: [Object], required: true },
-    process: { type: [String], required: true }
+    process: { type: [String], required: true },
 })
 
 const WineModel = model<WineType>('wine', schema);

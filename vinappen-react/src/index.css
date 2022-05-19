@@ -35,6 +35,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  overflow: hidden;
   z-index: 1;
 }
 

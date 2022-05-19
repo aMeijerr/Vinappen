@@ -14,16 +14,20 @@ router.get('/:wineId', async (req: Request, res: Response) => {
     res.status(200).json(gottenWine);
 });
 
+//http://localhost:3000/wines/search/Kalk
+
 router.get('/search/:query', async (req: Request, res: Response) => {
     const gottenWines = await getWinesBySearch(req.params.query);
     res.status(200).json(gottenWines);
 });
 
 // //Search title as ex. /wines/cert 
-// router.get('/:query', async (req, res) => {
+// router.get('/search/:query', async (req, res) => {
+//     console.log("this is query")
 //     const foundWine = await WineModel.find({
 //         title: { $regex: req.params.query, $options: 'i' } 
 //     })
+//     console.log(req.params.query)
 //     res.status(200).json(foundWine)
 // });
 
