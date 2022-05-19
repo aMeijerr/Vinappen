@@ -30,7 +30,7 @@ export async function fetchCategories(){
 
   export async function postRating(wineId: any, rating: any){
     try{
-      const response = await axios.post(`/recipes/${wineId}`, {rating: rating})
+      const response = await axios.post(`/wines/${wineId}`, {rating: rating})
       return response
     } catch (error: any){
       return error.response

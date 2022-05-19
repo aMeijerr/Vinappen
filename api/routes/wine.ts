@@ -23,11 +23,11 @@ router.get('/search/:query', async (req: Request, res: Response) => {
 
 // //Search title as ex. /wines/cert 
 // router.get('/search/:query', async (req, res) => {
-//     console.log("this is query")
+//   
 //     const foundWine = await WineModel.find({
 //         title: { $regex: req.params.query, $options: 'i' } 
 //     })
-//     console.log(req.params.query)
+//
 //     res.status(200).json(foundWine)
 // });
 

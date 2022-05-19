@@ -14,6 +14,8 @@ router.get('/:category', async (req: Request, res: Response) => {
     res.status(200).json(gottenWines);
 });
 
+//http://localhost:3000/category/Tyskland/Silva
+
 router.get('/:category/:query', async (req: Request, res: Response) => {
     const gottenWines = await GetWinesByCategoryAndSearch(req.params.category, req.params.query);
     res.status(200).json(gottenWines);
