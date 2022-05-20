@@ -1,9 +1,9 @@
 .selected-wine {
     display: flex;
-    padding: 3rem;
   width: 600px;
   height: 750px;
   flex-direction: column;
+  display: inline;
 }
 
 .return-link {

@@ -11,7 +11,8 @@ import './CategoryView.css'
 
 const CategoryView = () => {
     const [wines, setWines] = useState([]);
-    const { id } = useParams<any>();
+//changed param to string 20/5, checked functionality
+    const { id } = useParams<string>();
     useEffect(() => {
         fetchWinesByCategory(id).then(wines => setWines(wines.data));
     }, [id])

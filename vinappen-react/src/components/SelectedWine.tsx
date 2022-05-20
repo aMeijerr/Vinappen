@@ -39,10 +39,7 @@ console.log(wine.ratings)
                 </div>
                     <div className="bottle-description">
                         <img src={wine.imageUrl} alt={wine.title} />
-                        {/* <img src="http://localhost:3000/images/deepdown.png" alt={wines.imgUrl}/> */}
-                        {/* <img src={require('../img/palermo.png')} alt={wines.title} /> */}
                         <p>{wine.description}</p>
-                        {/* <h2>{wines.price}:-</h2> */}
                     </div>
 
                 <div className="wine-info-price">
@@ -50,7 +47,7 @@ console.log(wine.ratings)
                     <h2>{wine.price}:-</h2>
                 </div>
                 <div className="wine-rating">
-                <WineRating/>
+                <WineRating wineId={wine._id}/>
                 <p>{avgSum}%</p>
                 </div>
 

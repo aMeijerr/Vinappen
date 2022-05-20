@@ -1,5 +1,5 @@
 import express, {Request, Response} from 'express';
-import { getWines, getWinesById, getWinesBySearch } from '../db/wine';
+import { getWines, getWinesById, getWinesBySearch, pushRatingById } from '../db/wine';
 import WineModel from '../db/models/wineModel';
 
 const router = express.Router();
@@ -19,6 +19,11 @@ router.get('/:wineId', async (req: Request, res: Response) => {
 router.get('/search/:query', async (req: Request, res: Response) => {
     const gottenWines = await getWinesBySearch(req.params.query);
     res.status(200).json(gottenWines);
+});
+
+router.post('/:wineId', async (req: Request, res: Response) => {
+    const updatedWine = await pushRatingById(req.params.wineId, req.body.rating);
+    res.status(201).json(updatedWine);
 });
 
 // //Search title as ex. /wines/cert 
