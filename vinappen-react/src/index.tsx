@@ -10,6 +10,7 @@ import SelectedWine from './components/SelectedWine'
 // import { Provider } from 'react-redux'
 
 import reportWebVitals from './reportWebVitals';
+import FeaturedWines from './components/FeaturedWines';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { fetchCategories } from "../api";
 import {Link} from "react-router-dom";
-import './NavBar.css';
+import '../styles/NavBar.css';
 
 const NavBar = () => {
     const [categories, setCategories] = useState<any[]>([]);

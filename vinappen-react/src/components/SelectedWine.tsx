@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import WineRating from './WineRating';
-import './SelectedWine.css';
+import '../styles/SelectedWine.css';
 
 const SelectedWine = () => {
     const [wine, setWine] = useState<any>({ ratings: [] });

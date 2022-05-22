@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./FeaturedWines.css";
+import "../styles/FeaturedWines.css";
 // import { useParams } from "react-router";
 import WineListItem from './WineListItem';
 

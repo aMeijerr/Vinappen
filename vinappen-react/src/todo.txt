@@ -1,6 +1,5 @@
-Fixa styling på kategorilistan, lista bara länder??
+Lägg till active class på kategorier
 
-Skapa rating på selectedWine
-skapa post mot rating
+Fixa Mongo atlas
 
-Ta bort datapunkt i category -- område
+Deploy
