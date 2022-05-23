@@ -1,7 +1,7 @@
 
 import axios from "axios"
 
-axios.defaults.baseURL = "http://localhost:3000"
+axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL
 export async function fetchWines(){
     try{
       const response = await axios.get('/wines')
@@ -30,7 +30,7 @@ export async function fetchCategories(){
 
   export async function postRating(wineId: any, rating: any){
     try{
-      const response = await axios.post(`/wines/${wineId}`, {rating: rating})
+      const response = await axios.post(`/wines/${wineId}`, {ratings: rating})
       return response
     } catch (error: any){
       return error.response

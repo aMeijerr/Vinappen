@@ -8,7 +8,7 @@ const SelectedWine = () => {
     const { id } = useParams();
     useEffect(() => {
         const fetchWine = async () => {
-            const wine = await fetch(`http://localhost:3000/wines/${id}`)
+            const wine = await fetch(`${process.env.REACT_APP_API_BASE_URL}/wines/${id}`)
             .then(res => res.json())
             setWine(wine);
     }

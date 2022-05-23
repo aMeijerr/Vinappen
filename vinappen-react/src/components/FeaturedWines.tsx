@@ -12,7 +12,7 @@ const FeaturedWines = (): any => {
         let whiteWineList: string[] = [];
         let redWineList: string[] = [];
         // let wines: any;
-        const url = searchString ? `http://localhost:3000/wines/search/${searchString}` : "http://localhost:3000/wines";
+        const url: any = searchString ? `${process.env.REACT_APP_API_BASE_URL}/wines/search/${searchString}` : process.env.REACT_APP_API_BASE_URL;
         const fetchWines = async () => {
             const wines = await fetch(url)
   
