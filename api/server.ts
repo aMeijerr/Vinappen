@@ -16,23 +16,21 @@ import categoryRouter from './routes/category';
 //     console.log("MONGO config is not set")
 // }
 
-// const url = "mongodb+srv://alex:Yn4gxZhkaqmo68jS@wineapp.wisl0.mongodb.net/wineapp?retryWrites=true&w=majority"
-
-// connect(url)
-//     .then( () => {
-//         console.log('Connected to the database ')
-//     })
-//     .catch( (err) => {
-//       console.error(`Error connecting to the database. n${err}`);
-//     })
+if (process.env.MONGO_DB_CONNECTION_STRING) {
+    connect(process.env.MONGO_DB_CONNECTION_STRING).then(() => {
+        app.listen(port, () => console.log('listening to port: ' + port));
+    })
+} else {
+    console.log('Configuration MONGO_DB_CONNECTION_STRING not set')
+}
 
 // connect('mongodb://localhost:27017/WineApp')
-connect('mongodb+srv://alex:OvCLjZ3cCo0VEmEc@wineapp.wisl0.mongodb.net/WineApp').then(() => {
-    console.log('Connected to MongoDB')
-    app.listen(port, () => {
-    console.log (`Listening on port ${port}`)
-    });
-})
+// connect('mongodb+srv://alex:OvCLjZ3cCo0VEmEc@wineapp.wisl0.mongodb.net/WineApp').then(() => {
+//     console.log('Connected to MongoDB')
+//     app.listen(port, () => {
+//     console.log (`Listening on port ${port}`)
+//     });
+// })
 
 const app = express();
 app.use(cors());
