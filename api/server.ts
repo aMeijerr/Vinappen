@@ -46,7 +46,7 @@ const port = process.env.PORT || 3000
 app.use(express.static('public')); 
 app.use('/images', express.static('images'));
 
-
+//PeterMan
 
 app.get('/', (req: Request, res: Response) => {
 res.send ('Hello World!') });
