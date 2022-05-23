@@ -5,6 +5,7 @@ import WineModel from '../db/models/wineModel';
 const router = express.Router();
 
 router.get('/', async (req: Request, res: Response) => {
+    console.log(req.protocol + "://" + req.get('host'))
     const gottenWines = await getWines();
     res.status(200).json(gottenWines);
 });
@@ -14,7 +15,6 @@ router.get('/:wineId', async (req: Request, res: Response) => {
     res.status(200).json(gottenWine);
 });
 
-//http://localhost:3000/wines/search/Kalk
 
 router.get('/search/:query', async (req: Request, res: Response) => {
     const gottenWines = await getWinesBySearch(req.params.query);

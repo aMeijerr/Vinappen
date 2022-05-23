@@ -38,7 +38,7 @@ console.log(wine.ratings)
                     <h3>{wine.title}, {wine.vintage}</h3>
                 </div>
                     <div className="bottle-description">
-                        <img src={wine.imageUrl} alt={wine.title} />
+                        <img src={process.env.REACT_APP_API_BASE_URL + wine.imageUrl} alt={wine.title} />
                         <p>{wine.description}</p>
                     </div>
 
