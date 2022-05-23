@@ -24,7 +24,7 @@ export default function WineRating({wineId}: RatingProps) {
       />
     </div>
     } else {
-      return <h3>Thank you for voting!</h3>;
+      return <h3>Tack! 🍷</h3>;
     }
   }
   return (

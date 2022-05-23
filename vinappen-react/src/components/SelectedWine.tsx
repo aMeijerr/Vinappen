@@ -48,7 +48,7 @@ console.log(wine.ratings)
                 </div>
                 <div className="wine-rating">
                 <WineRating wineId={wine._id}/>
-                <p>{avgSum.toFixed()}%</p>
+                <p>Rating: {avgSum.toFixed()}%</p>
                 </div>
 
                 <div className="winemaking-description">
