@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import "../styles/FeaturedWines.css";
-// import { useParams } from "react-router";
 import WineListItem from './WineListItem';
+import "../styles/FeaturedWines.css";
 
 const FeaturedWines = (): any => {
     const [whiteWines, setWhiteWines] = useState<string[]>([]);
@@ -11,7 +10,6 @@ const FeaturedWines = (): any => {
     useEffect(() => {
         let whiteWineList: string[] = [];
         let redWineList: string[] = [];
-        // let wines: any;
         const url = searchString ? `${process.env.REACT_APP_API_BASE_URL}/wines/search/${searchString}` : `${process.env.REACT_APP_API_BASE_URL}/wines`;
         const fetchWines = async () => {
             const wines = await fetch(url)

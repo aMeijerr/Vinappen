@@ -1,5 +1,3 @@
 Lägg till active class på kategorier
 
-Fixa Mongo atlas
-
-Deploy
+kika på backend routes kring postrating

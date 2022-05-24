@@ -16,3 +16,8 @@
     overflow: hidden;
     height: 20px;
 }
+
+.navbar-category:hover {
+    color: grey;
+    text-decoration: underline;
+}

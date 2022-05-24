@@ -1,10 +1,5 @@
 import WineModel from './models/wineModel';
 
-// export const getCategories = async () => {
-//     const categories = await WineModel.find().distinct('category');
-//     return categories;
-// }
-
 export const getCategories = async () => {
     const categories = await WineModel.aggregate([
         { $match: {} },

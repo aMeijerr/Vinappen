@@ -60,3 +60,9 @@
 .wine-rating p {
     margin: auto 3rem auto auto;
 }
+
+.navbar-selected-wine {
+    position: absolute;
+    top: 1.5rem;
+    left: 5rem;
+  }

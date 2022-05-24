@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom';
 import '../styles/WineListItem.css'
 
+
 const WineListItem = ({wine}: any) => {
     return (
         <div className="list-item">

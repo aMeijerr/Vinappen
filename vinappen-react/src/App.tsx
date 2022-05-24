@@ -1,17 +1,6 @@
-// import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
 import FeaturedWines from './components/FeaturedWines';
 import NavBar from './components/NavBar';
-
 import './App.css';
-
-// interface MatchParams {
-//   id: string;
-// }
-
-// interface MatchProps extends RouteComponentProps<MatchParams> {
-
-// }
 
 const App = () => 
   <div className="App">
@@ -22,5 +11,6 @@ const App = () =>
       <FeaturedWines/>
     </div>
   </div>
+
 
 export default App;

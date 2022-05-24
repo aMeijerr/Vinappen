@@ -1,7 +1,28 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import WineRating from './WineRating';
+import NavBar from './NavBar';
 import '../styles/SelectedWine.css';
+
+// interface Grapes {
+//     grape: string,
+//     percentAmount: number,
+// }
+
+// interface WineProps {
+//     title: string,
+//     wineMaker: string,
+//     description: string,
+//     imageUrl: string,
+//     artNr: number,
+//     price: number
+//     vintage: number,
+//     alcohol: number,
+//     ratings: [number],
+//     category: [string],
+//     grapes: [Grapes],
+//     process: [string]
+// }
 
 const SelectedWine = () => {
     const [wine, setWine] = useState<any>({ ratings: [] });
@@ -32,6 +53,9 @@ console.log(wine.ratings)
 
     return (
         <div className="selected-wine">
+            <div className="navbar-selected-wine">
+            <NavBar/>
+            </div>
           <Link to="/" className="return-link"><h5>Back to winelist</h5></Link>
                 <div className="wine-title-header">
                     <h1>{wine.wineMaker && wine.wineMaker}</h1>
