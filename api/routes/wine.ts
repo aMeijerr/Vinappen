@@ -1,6 +1,5 @@
 import express, {Request, Response} from 'express';
 import { getWines, getWinesById, getWinesBySearch, pushRatingById } from '../db/wine';
-import WineModel from '../db/models/wineModel';
 
 const router = express.Router();
 
@@ -22,7 +21,7 @@ router.get('/search/:query', async (req: Request, res: Response) => {
 });
 
 router.post('/:wineId', async (req: Request, res: Response) => {
-    const updatedWine = await pushRatingById(req.params.wineId, req.body.rating);
+    const updatedWine = await pushRatingById(req.params.wineId, req.body.ratings);
     res.status(201).json(updatedWine);
 });
 

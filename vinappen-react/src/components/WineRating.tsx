@@ -11,7 +11,6 @@ export default function WineRating({wineId}: RatingProps) {
   const handleRating = async (rate: number) => {
     setRating(rate)
     await postRating(wineId, rate)
-    console.log(rate)
   }
 
   const renderStarRating = () => {

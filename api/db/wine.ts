@@ -16,12 +16,12 @@ export const getWinesBySearch = async (search: any) => {
 }
 
 
-export const getWinesById = async (id: string) => {
+export const getWinesById = async (id: String) => {
     const wine = await WineModel.findById(id);
     return wine;
 }
 
-export const pushRatingById = async (id: string, rating: number) => {
+export const pushRatingById = async (id: String, rating: Number) => {
     const wine = await WineModel.findOneAndUpdate(
         { _id: id },
         { $push: { ratings: rating } },
